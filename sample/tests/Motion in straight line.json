@@ -1,0 +1,181 @@
+ [
+    {
+      "qNumber": 1,
+      "question": "A car covers the first half of a journey at 60 km/h and the second half at 90 km/h. What is the average speed for the entire journey?",
+      "options": ["72 km/h", "75 km/h", "78 km/h", "80 km/h"],
+      "correct": 0,
+      "explanation": "To calculate the average speed, you need to use the harmonic mean because the time taken for each half of the journey is different due to differing speeds."
+    },
+    {
+      "qNumber": 2,
+      "question": "An object moves 4 m east, then 3 m west. What is its net displacement and distance?",
+      "options": ["1 m, 7 m", "7 m, 1 m", "1 m, 4 m", "4 m, 3 m"],
+      "correct": 0,
+      "explanation": "Displacement is the straight-line difference between the start and end points, while distance is the total path length covered."
+    },
+    {
+      "qNumber": 3,
+      "question": "An object accelerates uniformly from rest and travels 100 m in 5 seconds. What is its acceleration?",
+      "options": ["4 m/s²", "5 m/s²", "8 m/s²", "10 m/s²"],
+      "correct": 0,
+      "explanation": "Using the kinematic equation \\( s = ut + \\frac{1}{2} a t^2 \\) and solving for acceleration, we find that the object accelerates at 4 m/s²."
+    }
+    ,
+    {
+      "qNumber": 4,
+      "question": "A ball is thrown vertically upward with a velocity of 20 m/s. How high will it go before coming to rest? (Take \\( g = 10 \\, \\text{m/s}^2 \\))",
+      "options": ["10 m", "15 m", "20 m", "40 m"],
+      "correct": 2,
+      "explanation": "At the highest point, the velocity becomes zero. Using the kinematic equation, we can calculate the height."
+    }
+    ,
+    {
+      "qNumber": 5,
+      "question": "The velocity-time graph of a particle is a straight line with a negative slope. What does it indicate?",
+      "options": ["Uniform motion", "Uniform acceleration", "Uniform deceleration", "Object at rest"],
+      "correct": 2,
+      "explanation": "A straight line with a negative slope on a velocity-time graph indicates uniform deceleration, meaning the object is slowing down at a constant rate."
+    },
+    {
+      "qNumber": 6,
+      "question": "If the acceleration of an object is negative, and its velocity is positive, then:",
+      "options": ["Speed increases", "Speed decreases", "Speed is constant", "Object comes to rest instantly"],
+      "correct": 1,
+      "explanation": "When acceleration is negative and velocity is positive, the object is decelerating, meaning its speed is decreasing."
+    },
+    {
+      "qNumber": 7,
+      "question": "A man walks 5 m east, then 12 m north. What is his displacement?",
+      "options": ["13 m", "17 m", "12.5 m", "7 m"],
+      "correct": 0,
+      "explanation": "Displacement can be found using the Pythagorean theorem, as the motion forms a right triangle."
+    },
+    {
+      "qNumber": 8,
+      "question": "At what point during upward motion does a vertically thrown object have zero velocity but non-zero acceleration?",
+      "options": ["At launch", "At maximum height", "Midway", "Never"],
+      "correct": 1,
+      "explanation": "At the maximum height, the object's velocity becomes zero, but acceleration due to gravity is still acting downward."
+    },
+    {
+      "qNumber": 9,
+      "question": "The dimensional formula of acceleration is:",
+      "options": ["[LT⁻¹]", "[LT⁻²]", "[L²T⁻²]", "[L⁰T⁰]"],
+      "correct": 1,
+      "explanation": "Acceleration is the rate of change of velocity, and the dimensional formula of acceleration is [LT⁻²]."
+    },
+    {
+      "qNumber": 10,
+      "question": "An object travels with velocity 3 m/s for 5 s and then with -1 m/s for 5 s. What is its average velocity?",
+      "options": ["1 m/s", "0.5 m/s", "0 m/s", "-1 m/s"],
+      "correct": 2,
+      "explanation": "Average velocity is total displacement divided by total time. Here, the total displacement is zero, so the average velocity is zero."
+    },
+    {
+      "qNumber": 11,
+      "question": "What is the rate of change of displacement called?",
+      "options": ["Speed", "Acceleration", "Velocity", "Force"],
+      "correct": 2,
+      "explanation": "The rate of change of displacement is called velocity."
+    },
+    {
+      "qNumber": 12,
+      "question": "What is the SI unit of displacement?",
+      "options": ["m/s", "m", "km", "cm"],
+      "correct": 1,
+      "explanation": "Displacement is a measure of distance in a specific direction, and its SI unit is the meter (m)."
+    },
+    {
+      "qNumber": 13,
+      "question": "If an object travels equal distances in equal time intervals, it has:",
+      "options": ["Uniform speed", "Non-uniform speed", "Constant acceleration", "Variable velocity"],
+      "correct": 0,
+      "explanation": "When an object travels equal distances in equal time intervals, it moves with uniform speed."
+    },
+    {
+      "qNumber": 14,
+      "question": "An object dropped freely under gravity will:",
+      "options": ["Move at constant velocity", "Have uniform acceleration", "Stop midway", "Bounce"],
+      "correct": 1,
+      "explanation": "An object dropped freely under gravity accelerates uniformly due to gravity."
+    },
+    {
+      "qNumber": 15,
+      "question": "Which graph represents constant velocity?",
+      "options": ["Curved distance-time", "Sloped straight line distance-time", "Horizontal line velocity-time", "Both b & c"],
+      "correct": 3,
+      "explanation": "Constant velocity is shown by a straight sloped line on a distance-time graph and a horizontal line on a velocity-time graph."
+    },
+    {
+      "qNumber": 16,
+      "question": "A car accelerates uniformly from 10 m/s to 30 m/s over a distance of 200 m. What is its acceleration?",
+      "options": ["2 m/s²", "4 m/s²", "5 m/s²", "8 m/s²"],
+      "correct": 1,
+      "explanation": "Using the kinematic equation, we can solve for acceleration by considering the initial and final velocities and the distance traveled."
+    },
+    {
+      "qNumber": 17,
+      "question": "Two trains are moving in opposite directions at 60 km/h and 90 km/h. What is their relative speed?",
+      "options": ["150 km/h", "30 km/h", "60 km/h", "90 km/h"],
+      "correct": 0,
+      "explanation": "When two objects move in opposite directions, their relative speed is the sum of their individual speeds."
+    },
+{
+  "qNumber": 18,
+  "question": "A particle moves with position function \\(x(t) = 4t^2 - 3t + 2\\). What is its acceleration?",
+  "options": ["4 m/s²", "6 m/s²", "8 m/s²", "Constant 8 m/s²"],
+  "correct": 2,
+  "explanation": "Acceleration is the second derivative of the position function. Differentiating \\(x(t)\\) twice gives the acceleration."
+}
+,
+    {
+      "qNumber": 19,
+      "question": "From a velocity-time graph shaped as a triangle, how do you find total displacement?",
+      "options": ["Area under curve", "Slope", "Peak value", "Final velocity"],
+      "correct": 0,
+      "explanation": "The total displacement is represented by the area under the velocity-time graph."
+    },
+    {
+      "qNumber": 20,
+      "question": "A car moves forward 60 m, then backward 40 m. What is its final displacement?",
+      "options": ["100 m", "20 m", "-20 m", "60 m"],
+      "correct": 2,
+      "explanation": "Displacement is a vector, so the final displacement is the difference between the forward and backward distances."
+    },
+    {
+      "qNumber": 21,
+      "question": "Two cars start together. Car A accelerates at 2 m/s², B at 3 m/s². How long before car B overtakes A?",
+      "options": ["4 s", "5 s", "6 s", "7 s"],
+      "correct": 0,
+      "explanation": "By solving the equations of motion for both cars, you can determine the time at which car B overtakes car A."
+    },
+    {
+      "qNumber": 22,
+      "question": "A stone is thrown downward at 5 m/s from a height of 100 m. How long before it hits the ground? (g = 10 m/s²)",
+      "options": ["4 s", "5 s", "6 s", "7 s"],
+      "correct": 1,
+      "explanation": "Using the equation of motion for free-fall, you can calculate the time taken for the stone to hit the ground."
+    },
+    {
+      "qNumber": 23,
+      "question": "Which of the following graphs shows non-uniform acceleration?",
+      "options": ["Straight line velocity-time", "Curved velocity-time", "Straight line displacement-time", "Horizontal acceleration-time"],
+      "correct": 1,
+      "explanation": "A curved velocity-time graph indicates that the acceleration is changing, which shows non-uniform acceleration."
+    },
+    {
+      "qNumber": 24,
+      "question": "The displacement-time graph of a particle is a straight line. What does it represent?",
+      "options": ["Uniform motion", "Non-uniform motion", "Uniform acceleration", "Rest"],
+      "correct": 0,
+      "explanation": "A straight line on a displacement-time graph represents uniform motion, meaning the object is moving with a constant velocity."
+    },
+    {
+      "qNumber": 25,
+      "question": "A car accelerates uniformly from 20 m/s to 40 m/s in 10 seconds. What is the distance traveled?",
+      "options": ["200 m", "400 m", "600 m", "800 m"],
+      "correct": 1,
+      "explanation": "Using the equation for uniformly accelerated motion, you can calculate the distance traveled using the average velocity and time."
+    }
+  ]
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select your Test</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="testlist.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+    <label class="logo"><img src="logo.png" alt="" height="50px" width="50px">AspyrUp</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Batches.html">Batches</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>Select a subject and chapter to begin your test</h1>
+
+  <!-- Subject Buttons -->
+  <div class="subject-buttons">
+    <button onclick="showSubject('maths')">Maths</button>
+    
+    <button onclick="showSubject('science')">Science</button>
+
+  </div>
+
+  <!-- MATHS -->
+  <div id="maths" class="chapter-section">
+    <div>
+      <button class="test-button" onclick="startTest('Real Numbers')">Real Numbers</button>
+      <button class="test-button" onclick="viewResult('Real Numbers')">View Result</button>
+    </div>
+    <div>
+      <button class="test-button" onclick="startTest('Polynomials')">Polynomials</button>
+      <button class="test-button" onclick="viewResult('Polynomials')">View Result</button>
+    </div>
+  </div>
+
+
+
+  <!-- SCIENCE -->
+  <div id="science" class="chapter-section">
+    <div>
+      <button class="test-button" onclick="startTest('Chemical_Reactions_Equations')">Chemical Reactions & Equations</button>
+      <button class="test-button" onclick="viewResult('Chemical_Reactions_Equations')">View Result</button>
+    </div>
+    <div>
+      <button class="test-button" onclick="startTest('Acids_Bases_Salts')">Acids, Bases and Salts</button>
+      <button class="test-button" onclick="viewResult('Acids_Bases_Salts')">View Result</button>
+    </div>
+   
+  </div>
+
+
+
+    <footer style="background-color: #2C3E50; padding: 20px; text-align: center;">
+        <p style="margin: 0; color: #FFFFFF;">&copy; 2025 AspyrUp.</p>
+        <p>
+            <a href="#" style="color: #FFFFFF; text-decoration: none;">Privacy Policy</a> |
+            <a href="#" style="color: #FFFFFF; text-decoration: none;">Terms and Conditions</a>
+        </p>
+    </footer>
+
+  <script>
+    function startTest(testName) {
+      window.location.href = `start.html?test=${testName}`;
+    }
+
+    function viewResult(testName) {
+      const result = localStorage.getItem(`testResult_${testName}`);
+      if (result) {
+        window.location.href = `result.html?test=${testName}`;
+      } else {
+        alert("No result found for this test.");
+      }
+    }
+
+    // ✅ Toggle subject visibility
+    let currentVisible = null;
+
+    function showSubject(subjectId) {
+      const section = document.getElementById(subjectId);
+
+      // If the same subject is clicked again, toggle it off
+      if (currentVisible === section) {
+        section.classList.remove('active');
+        currentVisible = null;
+      } else {
+        // Hide others
+        document.querySelectorAll('.chapter-section').forEach(sec => sec.classList.remove('active'));
+        // Show selected
+        section.classList.add('active');
+        currentVisible = section;
+      }
+    }
+
+    // 🧹 Hide all chapter lists on page load (e.g., after clicking Back)
+    window.addEventListener('pageshow', function () {
+      document.querySelectorAll('.chapter-section').forEach(section => section.classList.remove('active'));
+      currentVisible = null;
+    });
+  </script>
+
+
+</body>
+
+</html>

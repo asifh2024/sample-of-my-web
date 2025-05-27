@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Analysis</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="result.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+
+
+<body>
+  <nav>
+    <input type="checkbox" id="check" name="" value="">
+    <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+    <label class="logo"><img src="logo.png">AspyrUp</label>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Batches.html">Batches</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="analysis">
+    <h1>Test Analysis</h1>
+
+    <div class="summary">
+      <h2>Summary</h2>
+      <p><strong>Total Marks:</strong> <span id="totalMarks">-</span> / 25</p>
+    </div>
+
+    <div class="subject-breakdown">
+      <h2>Performance</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Correct</th>
+            <th>Incorrect</th>
+            <th>Unattempted</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="subjectStats">
+            <!-- JS will fill -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="wrong-questions">
+      <h2>Incorrectly Answered or Unanswered</h2>
+      <div id="wrongList">
+        <!-- JS will fill -->
+      </div>
+    </div>
+  </div>
+
+  <footer style="background-color: #2C3E50; padding: 20px; text-align: center;">
+    <p style="margin: 0; color: #FFFFFF;">&copy; 2025 AspyrUp.</p>
+    <p>
+      <a href="privacy.html" style="color: #FFFFFF; text-decoration: none;">Privacy Policy</a> |
+      <a href="Terms-Conditions.html" style="color: #FFFFFF; text-decoration: none;">Terms and Conditions</a>
+    </p>
+  </footer>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const testName = urlParams.get("test") || "test2025";
+    const result = JSON.parse(localStorage.getItem(`testResult_${testName}`));
+
+    if (!result || !result.subject) {
+      document.body.innerHTML = `<h2>No result found for "${testName}"</h2>`;
+      throw new Error("No result in localStorage");
+    }
+
+    const { correct, incorrect, unattempted, wrongQuestions } = result.subject;
+    const totalScore = correct * 1; // +1 for each correct answer
+
+    document.getElementById("subjectStats").innerHTML = `
+      <td>${correct}</td>
+      <td>${incorrect}</td>
+      <td>${unattempted}</td>
+      <td>${totalScore}</td>
+    `;
+
+    document.getElementById("totalMarks").textContent = totalScore;
+
+    const wrongList = document.getElementById("wrongList");
+
+    wrongQuestions.forEach(q => {
+      const item = document.createElement("div");
+      item.style.marginBottom = "25px";
+      item.innerHTML = `
+        <p><strong>Q${q.qNo}:</strong> ${q.question}</p>
+        <p>Your Answer: <span style="color:red">${q.yourAnswer || "Unanswered"}</span></p>
+        <p>Correct Answer: <span style="color:green">${q.correctAnswer}</span></p>
+        <p><strong>Explanation:</strong> ${q.explanation}</p>
+        <hr/>
+      `;
+      wrongList.appendChild(item);
+    });
+
+    // Re-render MathJax equations after DOM update
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+  </script>
+</body>
+
+</html>

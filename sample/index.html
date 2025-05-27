@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check" name="" value="">
+        <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+        <label class="logo"><img src="logo.png" alt="" height="50px" width="50px">AspyrUp</label>
+
+
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Batches.html">Batches</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="hero">
+        <h1>Welcome to <span class="animated-word">AspyrUp</span></h1>
+        <p>Here you will get <span id="changing-word" style="color: #0aac96; font-weight: 600; font-size: 1.5rem;">Doubt Support</span></p>
+        <a href="Batches.html" class="explore-button">Explore Batches</a>
+    </section>
+
+    <section class="mains">
+        <div class="main">
+            <h3>Learn Smarter, Not Harder</h3>
+            <p>We explain the logic, not just the answer—so you actually get it.</p>
+        </div>
+
+        <div class="main">
+            <h3> Board-Focused Preparation</h3>
+            <p>Important questions</p>
+        </div>
+        <div class="main">
+            <h3> Live Doubt Sessions</h3>
+            <p>Join live sessions to get your doubts cleared instantly.</p>
+        </div>
+        <div class="main">
+            <h3>Doubt Classes</h3>
+            <p>On Google meet</p>
+        </div>
+
+    </section>
+
+    <footer style="background-color: #2C3E50; padding: 20px; text-align: center;">
+        <p style="margin: 0; color: #FFFFFF;">&copy; 2025 AspyrUp.</p>
+        <p>
+            <a href="#" style="color: #FFFFFF; text-decoration: none;">Privacy Policy</a> |
+            <a href="#" style="color: #FFFFFF; text-decoration: none;">Terms and Conditions</a>
+        </p>
+    </footer>
+
+
+    <script>
+        const words = ["Doubt Support", "Tution Classes", "PYQ", "Mentorship"];
+        let index = 0;
+    
+        const changingWord = document.getElementById("changing-word");
+    
+        setInterval(() => {
+            index = (index + 1) % words.length;
+            changingWord.textContent = words[index];
+        }, 2000);
+    </script>
+    
+
+
+
+
+
+</body>
+
+</html>
