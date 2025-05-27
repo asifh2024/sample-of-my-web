@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batches</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="Batches.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check" name="" value="">
+    <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+    <label class="logo"><img src="logo.png" alt="" height="50px" width="50px">AspyrUp</label>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="Batches.html">Batches</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="batch-section">
+    <div class="batches">
+      <img src="Xth PYQ.jpg" alt="Batch Banner" class="batch-thumbnail">
+      <h3>Science MCQ test</h3>
+      <p>For Xth students</p>
+      <p class="course-price">₹0</p>
+      <div class="buttons">
+        <a href="testlistX.html" class="enter-exam">Enter Exam</a>
+        <button class="enter-exam knowMoreBtn" data-modal="modal1">Know more</button>
+      </div>
+    </div>
+
+    <div class="batches">
+      <img src="Xth PYQ.jpg" alt="Batch Banner" class="batch-thumbnail">
+      <h3>Chapterwise MCQ test</h3>
+      <p>For XIth students</p>
+<p class="course-price">₹0</p>
+      <div class="buttons">
+        <a href="testlistXI.html" class="enter-exam">Enter Exam</a>
+        <button class="enter-exam knowMoreBtn" data-modal="modal2">Know more</button>
+      </div>
+    </div>
+
+    <div class="batches">
+      <img src="XIIth PYQ.jpg" alt="Batch Banner" class="batch-thumbnail">
+      <h3>Chapterwise MCQ test</h3>
+      <p>For XIIth students</p>
+      <p class="course-price">₹0</p>
+      <div class="buttons">
+        <a href="testlistXII.html" class="enter-exam">Enter Exam</a>
+        <button class="enter-exam knowMoreBtn" data-modal="modal3">Know more</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Popups for each Know More button -->
+
+  <!-- Modal 1 -->
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+      <p>Launching soon</p>
+    </div>
+  </div>
+
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+      <p>Launching soon</p>
+    </div>
+  </div>
+
+
+  <!-- Modal 3 -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+      <p>📙 Launching Soon
+      </p>
+    </div>
+  </div>
+
+
+  <footer style="background-color: #2C3E50; padding: 20px; text-align: center;">
+    <p style="margin: 0; color: #FFFFFF;">&copy; 2025 AspyrUp.</p>
+    <p>
+      <a href="#" style="color: #FFFFFF; text-decoration: none;">Privacy Policy</a> |
+      <a href="#" style="color: #FFFFFF; text-decoration: none;">Terms and Conditions</a>
+    </p>
+  </footer>
+
+  <!-- Disable right-click and keys -->
+  <script>
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === 'F12' || (e.ctrlKey && (e.key === 'I' || e.key === 'U'))) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- Modal functionality -->
+  <script>
+    const knowMoreBtns = document.querySelectorAll(".knowMoreBtn");
+
+    knowMoreBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const modalId = btn.getAttribute("data-modal");
+        document.getElementById(modalId).style.display = "block";
+      });
+    });
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = "none";
+    }
+
+    window.addEventListener("click", (e) => {
+      if (e.target.classList.contains("modal")) {
+        e.target.style.display = "none";
+      }
+    });
+  </script>
+</body>
+
+</html>

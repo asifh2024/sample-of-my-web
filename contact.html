@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check" name="" value="">
+        <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+        <label class="logo"><img src="logo.png" alt="" height="50px" width="50px">AspyrUp</label>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Batches.html">Batches</a></li>
+            <li><a href="#">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact">
+        <p>If you have any questions, feel free to reach out to us.</p><br>
+        <form action= "https://docs.google.com/forms/u/0/d/e/1FAIpQLSch2NIIcBxI2Xbb2qhnvCugujQF8l_EUlUThBAeiuaG-7isaQ/formResponse" >
+      
+            <label for="name">Name</label>
+            <input type="text" id="name" name="entry.372812034" required autofocus>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="entry.1797146161" required>
+
+            <label for="number">Mobile Number</label>
+            <input type="tel" id="Mobile" name="entry.1784131367" pattern="^\d{10}$" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="entry.663069860" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+
+    <footer style="background-color: #2C3E50; padding: 20px; text-align: center; margin-top: 10px;">
+        <p style="margin: 0; color: #FFFFFF;">&copy; 2025 AspyrUp.</p>
+        <p>
+            <a href="#" style="color: #FFFFFF; text-decoration: none;">Privacy Policy</a> |
+            <a href="#" style="color: #FFFFFF; text-decoration: none;">Terms and Conditions</a>
+        </p>
+    </footer>
+
+    <script>document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <script>document.addEventListener("keydown", function (e) {
+            if (e.key === 'F12' || (e.ctrlKey && (e.key === 'I' || e.key === 'U'))) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

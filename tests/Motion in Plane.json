@@ -1,0 +1,177 @@
+[
+  {
+    "qNumber": 1,
+    "question": "A car travels along a straight line for 100 meters in 20 seconds. What is its average velocity?",
+    "options": ["5 m/s", "4 m/s", "10 m/s", "20 m/s"],
+    "correct": 0,
+    "explanation": "Average velocity = \\(\\frac{\\text{total displacement}}{\\text{total time}} = \\frac{100\\, \\text{m}}{20\\, \\text{s}} = 5 \\text{ m/s}\\)"
+  },
+  {
+    "qNumber": 2,
+    "question": "A particle moves in a circle of radius 5 meters with a constant speed of 10 m/s. What is its centripetal acceleration?",
+    "options": ["5 m/s²", "10 m/s²", "20 m/s²", "25 m/s²"],
+    "correct": 1,
+    "explanation": "Centripetal acceleration = \\(\\frac{v^2}{r} = \\frac{10^2}{5} = 20 \\text{ m/s}^2\\)"
+  },
+  {
+    "qNumber": 3,
+    "question": "A projectile is fired at an angle of 45° with an initial speed of 20 m/s. What is the time of flight?",
+    "options": ["4.0 s", "5.0 s", "2.5 s", "3.0 s"],
+    "correct": 0,
+    "explanation": "Time of flight = \\(\\frac{2u \\sin(\\theta)}{g} = \\frac{2 \\times 20 \\times \\sin(45^{\\circ})}{9.8} = 4.0 \\text{ s}\\)"
+  },
+  {
+    "qNumber": 4,
+    "question": "A body is projected horizontally with an initial velocity of 10 m/s from the top of a building. How long does it take to hit the ground from a height of 20 meters?",
+    "options": ["2.0 s", "2.5 s", "3.0 s", "4.0 s"],
+    "correct": 2,
+    "explanation": "Time to fall = \\(\\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2 \\times 20}{9.8}} = 2.02 \\text{ s}\\)"
+  },
+  {
+    "qNumber": 5,
+    "question": "A stone is thrown at an angle of 60° to the horizontal with an initial velocity of 40 m/s. What is the maximum height attained by the stone?",
+    "options": ["50 m", "60 m", "80 m", "90 m"],
+    "correct": 1,
+    "explanation": "Maximum height = \\(\\frac{u^2 \\sin^2(\\theta)}{2g} = \\frac{40^2 \\sin^2(60^{\\circ})}{2 \\times 9.8} = 60.8 \\text{ m}\\)"
+  },
+  {
+    "qNumber": 6,
+    "question": "A projectile is thrown with an initial speed of 30 m/s at an angle of 30°. What is the horizontal range?",
+    "options": ["60 m", "80 m", "90 m", "100 m"],
+    "correct": 1,
+    "explanation": "Range = \\(\\frac{u^2 \\sin(2\\theta)}{g} = \\frac{30^2 \\sin(60^{\\circ})}{9.8} = 80.5 \\text{ m}\\)"
+  },
+  {
+    "qNumber": 7,
+    "question": "A body moves in a circle of radius 10 meters with a constant speed of 5 m/s. What is the time period of the motion?",
+    "options": ["6.28 s", "5.00 s", "8.00 s", "3.14 s"],
+    "correct": 0,
+    "explanation": "Time period \\(T = \\frac{2\\pi r}{v} = \\frac{2\\pi \\times 10}{5} = 6.28 \\text{ s}\\)"
+  },
+  {
+    "qNumber": 8,
+    "question": "An object moves in a circle with an angular velocity of 5 rad/s. What is the linear velocity if the radius of the circle is 4 meters?",
+    "options": ["5 m/s", "10 m/s", "20 m/s", "25 m/s"],
+    "correct": 1,
+    "explanation": "Linear velocity = \\(\\omega r = 5 \\times 4 = 20 \\text{ m/s}\\)"
+  },
+  {
+    "qNumber": 9,
+    "question": "A particle moves with a velocity of 10 m/s along the x-axis. What is the angle of its motion with the horizontal axis?",
+    "options": ["0°", "45°", "90°", "180°"],
+    "correct": 0,
+    "explanation": "Since the particle moves along the x-axis, the angle is \\(0^{\\circ}\\)."
+  },
+  {
+    "qNumber": 10,
+    "question": "A body is projected with a velocity of 30 m/s at an angle of 60° to the horizontal. What is the time of flight?",
+    "options": ["3.1 s", "4.0 s", "5.0 s", "6.0 s"],
+    "correct": 1,
+    "explanation": "Time of flight = \\(\\frac{2u \\sin(\\theta)}{g} = \\frac{2 \\times 30 \\times \\sin(60^{\\circ})}{9.8} = 5.0 \\text{ s}\\)"
+  },
+  {
+    "qNumber": 11,
+    "question": "A particle moves in a circle with a constant speed of 10 m/s. If the radius of the circle is 5 meters, what is its centripetal force?",
+    "options": ["20 N", "10 N", "5 N", "25 N"],
+    "correct": 0,
+    "explanation": "Centripetal force = \\(\\frac{mv^2}{r} = \\frac{m \\times 10^2}{5}\\). For \\(m = 2 \\text{ kg}\\), \\(F = 40 \\text{ N}\\)"
+  },
+  {
+    "qNumber": 12,
+    "question": "An object moves along a straight line with a uniform acceleration. If its initial velocity is 5 m/s and after 4 seconds, its velocity is 25 m/s, what is the acceleration?",
+    "options": ["5 m/s²", "4 m/s²", "6 m/s²", "7 m/s²"],
+    "correct": 0,
+    "explanation": "Acceleration = \\(\\frac{v - u}{t} = \\frac{25 - 5}{4} = 5 \\text{ m/s}^2\\)"
+  },
+  {
+    "qNumber": 13,
+    "question": "A particle moves in a circle with a radius of 2 meters. If its linear speed is 4 m/s, what is the angular velocity?",
+    "options": ["2 rad/s", "4 rad/s", "6 rad/s", "8 rad/s"],
+    "correct": 1,
+    "explanation": "Angular velocity = \\(\\frac{v}{r} = \\frac{4}{2} = 2 \\text{ rad/s}\\)"
+  },
+  {
+    "qNumber": 14,
+    "question": "A projectile is thrown with a velocity of 20 m/s at an angle of 45°. What is the time of flight?",
+    "options": ["4.0 s", "5.0 s", "6.0 s", "8.0 s"],
+    "correct": 0,
+    "explanation": "Time of flight = \\(\\frac{2u \\sin(\\theta)}{g} = \\frac{2 \\times 20 \\times \\sin(45^{\\circ})}{9.8} = 4.0 \\text{ s}\\)"
+  },
+  {
+    "qNumber": 15,
+    "question": "A body is moving with an initial velocity of 10 m/s along a straight path. What will be its displacement after 5 seconds if it has an acceleration of 2 m/s²?",
+    "options": ["30 m", "40 m", "50 m", "60 m"],
+    "correct": 1,
+    "explanation": "Displacement = \\(ut + \\frac{1}{2}at^2 = 10 \\times 5 + \\frac{1}{2} \\times 2 \\times 5^2 = 50 \\text{ m}\\)"
+  },
+  {
+    "qNumber": 16,
+    "question": "A body is moving in a circle with a radius of 10 meters. If its velocity is 20 m/s, what is the centripetal acceleration?",
+    "options": ["20 m/s²", "40 m/s²", "60 m/s²", "80 m/s²"],
+    "correct": 2,
+    "explanation": "Centripetal acceleration = \\(\\frac{v^2}{r} = \\frac{20^2}{10} = 40 \\text{ m/s}^2\\)"
+  },
+  {
+    "qNumber": 17,
+    "question": "A particle moves with a velocity of 12 m/s along the x-axis. What will be its velocity after 3 seconds if it has an acceleration of 2 m/s² along the y-axis?",
+    "options": ["12 m/s", "15 m/s", "18 m/s", "20 m/s"],
+    "correct": 0,
+    "explanation": "The particle is moving along the x-axis, so its velocity along the x-axis does not change."
+  },
+  {
+    "qNumber": 18,
+    "question": "A rock is thrown vertically upward with an initial velocity of 20 m/s. What is its maximum height?",
+    "options": ["15 m", "20 m", "25 m", "30 m"],
+    "correct": 1,
+    "explanation": "Maximum height = \\(\\frac{u^2}{2g} = \\frac{20^2}{2 \\times 9.8} = 20.4 \\text{ m}\\)"
+  },
+  {
+    "qNumber": 19,
+    "question": "A car moves with a constant acceleration of 2 m/s². If its initial velocity is 10 m/s, what will be its velocity after 5 seconds?",
+    "options": ["15 m/s", "20 m/s", "25 m/s", "30 m/s"],
+    "correct": 2,
+    "explanation": "Velocity = \\(u + at = 10 + 2 \\times 5 = 20 \\text{ m/s}\\)"
+  },
+  {
+    "qNumber": 20,
+    "question": "A particle moves with a velocity of 8 m/s along a straight path. If its acceleration is 4 m/s², what will be its velocity after 3 seconds?",
+    "options": ["8 m/s", "12 m/s", "16 m/s", "20 m/s"],
+    "correct": 1,
+    "explanation": "Velocity = \\(u + at = 8 + 4 \\times 3 = 12 \\text{ m/s}\\)"
+  },
+  {
+    "qNumber": 21,
+    "question": "A ball is thrown upward with a velocity of 15 m/s. What will be its velocity after 3 seconds?",
+    "options": ["15 m/s", "12 m/s", "9 m/s", "6 m/s"],
+    "correct": 2,
+    "explanation": "Velocity after time \\(v = u - g \\times t = 15 - 10 \\times 3 = 15 - 30 = -15 \\text{ m/s}\\)"
+  },
+  {
+    "qNumber": 22,
+    "question": "A body falls from a height of 20 meters. What is its velocity just before hitting the ground?",
+    "options": ["10 m/s", "15 m/s", "20 m/s", "25 m/s"],
+    "correct": 1,
+    "explanation": "Velocity = \\(\\sqrt{2gh} = \\sqrt{2 \\times 9.8 \\times 20} = 19.8 \\text{ m/s}\\)"
+  },
+  {
+    "qNumber": 23,
+    "question": "A car is moving at a speed of 20 m/s. If the car slows down with an acceleration of 2 m/s², how long will it take to stop?",
+    "options": ["5 s", "10 s", "15 s", "20 s"],
+    "correct": 0,
+    "explanation": "Time = \\(\\frac{v}{a} = \\frac{20}{2} = 10 \\text{ s}\\)"
+  },
+  {
+    "qNumber": 24,
+    "question": "A ball is thrown horizontally from a height of 10 meters. What is the time it will take to hit the ground?",
+    "options": ["1 s", "2 s", "3 s", "4 s"],
+    "correct": 1,
+    "explanation": "Time to fall = \\(\\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2 \\times 10}{9.8}} = 1.43 \\text{ s}\\)"
+  },
+  {
+    "qNumber": 25,
+    "question": "A particle is moving in a circle with a radius of 3 meters and a speed of 6 m/s. What is the centripetal force acting on the particle?",
+    "options": ["18 N", "36 N", "72 N", "108 N"],
+    "correct": 1,
+    "explanation": "Centripetal force = \\(\\frac{mv^2}{r} = \\frac{m \\times 6^2}{3}\\). For \\(m = 2 \\text{ kg}\\), \\(F = 24 \\text{ N}\\)"
+  }
+]

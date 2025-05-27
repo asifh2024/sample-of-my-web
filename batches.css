@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #2C3E50;
+    position: fixed;
+}
+
+label.logo {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    float: left;
+    line-height: 80px;
+
+    img{
+        width: 50px;
+        height: auto;
+        border-radius: 50%;
+    
+    }
+}
+
+nav ul {
+    float: right;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 8px 20px;
+
+}
+
+nav ul li a.active,
+a:hover {
+    background-color: #324e69;
+}
+
+#checkbtn {
+    float: right;
+    line-height: 80px;
+    margin-left: 5px;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    left: 0;
+}
+
+
+
+.batch-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.batches {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.batch-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.course-price {
+    font-size: 1.2em;
+    color: #c5a203;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.enter-exam {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    cursor: pointer;
+    background-color: #780457;
+    color: white;
+    text-decoration: none;
+}
+
+.enter-exam:hover {
+
+    background-color: #033535;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh; 
+    overflow-y: auto;  
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+ 
+.close-btn {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: darkred;
+}
+
+
+
+
+
+
+
+@media(max-width: 886px) {
+
+    #checkbtn {
+        display: block;
+        font-size: 26px;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 100vh;
+        background-color: #2C3E50;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        transition: left 0.3s ease;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+    }
+
+
+    label.logo {
+        font-size: 26px;
+    }
+
+
+}

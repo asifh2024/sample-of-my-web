@@ -1,0 +1,302 @@
+[
+    {
+        "qNumber": 1,
+        "question": "What type of chemical reaction is: 2AgBr → 2Ag + Br₂?",
+        "options": [
+            "Decomposition",
+            "Combination",
+            "Displacement",
+            "Double displacement"
+        ],
+        "correct": 0,
+        "explanation": "This is a decomposition reaction where silver bromide breaks down into silver and bromine."
+    },
+    {
+        "qNumber": 2,
+        "question": "Which of the following is not a characteristic of a chemical reaction?",
+        "options": [
+            "Change in temperature",
+            "Formation of a new substance",
+            "Reversible change",
+            "Evolution of gas"
+        ],
+        "correct": 2,
+        "explanation": "Not all chemical reactions are reversible; reversibility is not a general characteristic."
+    },
+    {
+        "qNumber": 3,
+        "question": "In a redox reaction, oxidation involves:",
+        "options": [
+            "Loss of electrons",
+            "Gain of electrons",
+            "Loss of protons",
+            "Gain of neutrons"
+        ],
+        "correct": 0,
+        "explanation": "Oxidation is defined as the loss of electrons."
+    },
+    {
+        "qNumber": 4,
+        "question": "Which reaction is an example of a displacement reaction?",
+        "options": [
+            "Zn + CuSO₄ → ZnSO₄ + Cu",
+            "HCl + NaOH → NaCl + H₂O",
+            "CaO + CO₂ → CaCO₃",
+            "2H₂O → 2H₂ + O₂"
+        ],
+        "correct": 0,
+        "explanation": "Zinc displaces copper from copper sulfate solution."
+    },
+    {
+        "qNumber": 5,
+        "question": "What is the color change observed when iron nails are dipped in copper sulfate solution?",
+        "options": [
+            "Blue to colorless",
+            "Colorless to blue",
+            "Blue to green",
+            "Green to blue"
+        ],
+        "correct": 2,
+        "explanation": "The solution turns green due to the formation of iron sulfate."
+    },
+    {
+        "qNumber": 6,
+        "question": "Which of the following represents a balanced equation?",
+        "options": [
+            "H₂ + O₂ → H₂O",
+            "2H₂ + O₂ → 2H₂O",
+            "H₂ + O₂ → 2H₂O",
+            "2H₂ + O₂ → H₂O"
+        ],
+        "correct": 1,
+        "explanation": "Only 2H₂ + O₂ → 2H₂O is balanced correctly."
+    },
+    {
+        "qNumber": 7,
+        "question": "Which reaction is an example of a precipitation reaction?",
+        "options": [
+            "AgNO₃ + NaCl → AgCl↓ + NaNO₃",
+            "Zn + HCl → ZnCl₂ + H₂",
+            "CaCO₃ → CaO + CO₂",
+            "H₂ + Cl₂ → 2HCl"
+        ],
+        "correct": 0,
+        "explanation": "AgCl is an insoluble solid that precipitates out."
+    },
+    {
+        "qNumber": 8,
+        "question": "The rusting of iron is an example of:",
+        "options": [
+            "Redox reaction",
+            "Decomposition reaction",
+            "Combination reaction",
+            "Displacement reaction"
+        ],
+        "correct": 0,
+        "explanation": "Rusting involves oxidation of iron and reduction of oxygen — a redox process."
+    },
+    {
+        "qNumber": 9,
+        "question": "Which is the correct skeletal chemical equation for combustion of methane?",
+        "options": [
+            "CH₄ + O₂ → CO₂ + H₂O",
+            "CH₄ + 2O₂ → CO₂ + 2H₂O",
+            "CH₄ + O₂ → CO₂ + 2H₂O",
+            "CH₄ + O₂ → C + H₂O"
+        ],
+        "correct": 1,
+        "explanation": "Balanced: CH₄ + 2O₂ → CO₂ + 2H₂O."
+    },
+    {
+        "qNumber": 10,
+        "question": "Which type of reaction is: NaOH + HCl → NaCl + H₂O?",
+        "options": [
+            "Neutralization",
+            "Displacement",
+            "Decomposition",
+            "Redox"
+        ],
+        "correct": 0,
+        "explanation": "Acid-base reactions forming salt and water are neutralization reactions."
+    },
+    {
+        "qNumber": 11,
+        "question": "Which reaction will occur spontaneously?",
+        "options": [
+            "Cu + ZnSO₄",
+            "Zn + CuSO₄",
+            "Ag + HCl",
+            "Au + CuSO₄"
+        ],
+        "correct": 1,
+        "explanation": "Zinc is more reactive than copper and can displace it."
+    },
+    {
+        "qNumber": 12,
+        "question": "What is observed when lead nitrate is heated?",
+        "options": [
+            "Brown fumes",
+            "Blue solution",
+            "Green residue",
+            "Colorless gas"
+        ],
+        "correct": 0,
+        "explanation": "Heating Pb(NO₃)₂ gives brown fumes of NO₂."
+    },
+    {
+        "qNumber": 13,
+        "question": "Which of the following is both an oxidation and a reduction reaction?",
+        "options": [
+            "Redox",
+            "Decomposition",
+            "Combination",
+            "Neutralization"
+        ],
+        "correct": 0,
+        "explanation": "Redox reactions involve simultaneous oxidation and reduction."
+    },
+    {
+        "qNumber": 14,
+        "question": "When calcium reacts with water, the gas evolved is:",
+        "options": [
+            "Hydrogen",
+            "Oxygen",
+            "Carbon dioxide",
+            "Chlorine"
+        ],
+        "correct": 0,
+        "explanation": "Ca + 2H₂O → Ca(OH)₂ + H₂↑ ⇒ hydrogen gas evolves."
+    },
+    {
+        "qNumber": 15,
+        "question": "Which of these is an endothermic reaction?",
+        "options": [
+            "Decomposition of CaCO₃",
+            "Combustion of methane",
+            "Neutralization",
+            "Rusting of iron"
+        ],
+        "correct": 0,
+        "explanation": "Decomposition of calcium carbonate requires heat."
+    },
+    {
+        "qNumber": 16,
+        "question": "Which is a characteristic of a chemical change?",
+        "options": [
+            "Formation of new substances",
+            "Reversibility",
+            "No energy change",
+            "Change in state only"
+        ],
+        "correct": 0,
+        "explanation": "Chemical changes form new substances and often involve energy change."
+    },
+    {
+        "qNumber": 17,
+        "question": "In electrolysis of water, the volume of hydrogen produced is:",
+        "options": [
+            "Twice that of oxygen",
+            "Equal to oxygen",
+            "Half of oxygen",
+            "Same as water"
+        ],
+        "correct": 0,
+        "explanation": "H₂:O₂ is in 2:1 volume ratio due to chemical formula H₂O."
+    },
+    {
+        "qNumber": 18,
+        "question": "Color of copper sulfate solution is:",
+        "options": [
+            "Blue",
+            "Green",
+            "Red",
+            "Yellow"
+        ],
+        "correct": 0,
+        "explanation": "CuSO₄ solution is blue due to hydrated Cu²⁺ ions."
+    },
+    {
+        "qNumber": 19,
+        "question": "What is the product of thermal decomposition of lead nitrate?",
+        "options": [
+            "NO₂, O₂, PbO",
+            "NO, PbO₂, H₂O",
+            "NO₂, PbO, HCl",
+            "O₃, Pb, NO₂"
+        ],
+        "correct": 0,
+        "explanation": "Pb(NO₃)₂ → PbO + NO₂ + O₂ on heating."
+    },
+    {
+        "qNumber": 20,
+        "question": "The reaction: Fe + CuSO₄ → FeSO₄ + Cu is:",
+        "options": [
+            "Displacement",
+            "Double displacement",
+            "Decomposition",
+            "Combination"
+        ],
+        "correct": 0,
+        "explanation": "Iron displaces copper ⇒ displacement reaction."
+    },
+    {
+        "qNumber": 21,
+        "question": "Which metal does not react with dilute acids to produce hydrogen?",
+        "options": [
+            "Copper",
+            "Zinc",
+            "Magnesium",
+            "Aluminium"
+        ],
+        "correct": 0,
+        "explanation": "Copper is less reactive than hydrogen; no reaction with dilute acids."
+    },
+    {
+        "qNumber": 22,
+        "question": "In rusting, iron combines with:",
+        "options": [
+            "Oxygen and water",
+            "Carbon dioxide and water",
+            "Nitrogen",
+            "Salt"
+        ],
+        "correct": 0,
+        "explanation": "Rusting involves Fe + H₂O + O₂ → Fe₂O₃·xH₂O."
+    },
+    {
+        "qNumber": 23,
+        "question": "A chemical equation is balanced to satisfy the law of:",
+        "options": [
+            "Conservation of mass",
+            "Conservation of energy",
+            "Conservation of momentum",
+            "Conservation of charge"
+        ],
+        "correct": 0,
+        "explanation": "Balancing ensures total mass of reactants = total mass of products."
+    },
+    {
+        "qNumber": 24,
+        "question": "Which reaction type is represented by: AB + CD → AD + CB?",
+        "options": [
+            "Double displacement",
+            "Combination",
+            "Decomposition",
+            "Displacement"
+        ],
+        "correct": 0,
+        "explanation": "AB + CD → AD + CB is a double displacement reaction."
+    },
+    {
+        "qNumber": 25,
+        "question": "What happens when sodium reacts violently with water?",
+        "options": [
+            "Forms sodium hydroxide and hydrogen gas",
+            "Forms sodium chloride",
+            "Forms sodium oxide",
+            "No reaction"
+        ],
+        "correct": 0,
+        "explanation": "2Na + 2H₂O → 2NaOH + H₂ (violent reaction)."
+    }
+]
