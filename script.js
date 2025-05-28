@@ -36,7 +36,7 @@ fetch(`tests/${testName}.json`)
     updateQuestionList();
   })
   .catch(err => {
-    alert("Error loading test data.");
+    alert("Coming Soon.");
     console.error(err);
   });
 
