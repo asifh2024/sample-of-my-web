@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <title>Contact</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 
 <body>
@@ -27,25 +26,60 @@
 
     <section class="contact">
         <p>If you have any questions, feel free to reach out to us.</p><br>
-        <form action= "https://docs.google.com/forms/u/0/d/e/1FAIpQLSch2NIIcBxI2Xbb2qhnvCugujQF8l_EUlUThBAeiuaG-7isaQ/formResponse" >
-      
-            <label for="name">Name</label>
-            <input type="text" id="name" name="entry.372812034" required autofocus>
+        <form id="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="entry.1797146161" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
 
-            <label for="number">Mobile Number</label>
-            <input type="tel" id="Mobile" name="entry.1784131367" pattern="^\d{10}$" required>
+    <label for="mobile">Mobile Number</label>
+    <input type="tel" id="mobile" name="mobile" pattern="^\d{10}$" required>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="entry.663069860" required></textarea>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
+    <button type="submit">Send Message</button>
+</form>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const form = this;
+      const formData = new FormData(form);
+      const jsonData = {
+          access_key: '06beb580-5c7e-4eaa-b083-6e7534924d33'  // Replace this
+      };
+
+      formData.forEach((value, key) => {
+          jsonData[key] = value;
+      });
+
+      fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(jsonData)
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.success) {
+              alert("We will connect soon!");
+              form.reset();
+          } else {
+              alert("Submission failed: " + data.message);
+          }
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          alert("An error occurred. Please try again.");
+      });
+  });
+</script>
+
     </section>
-
-
 
     <footer style="background-color: #2C3E50; padding: 20px; text-align: center; margin-top: 10px;">
         <p style="margin: 0; color: #FFFFFF;">&copy; 2025 AspyrUp.</p>
@@ -55,17 +89,45 @@
         </p>
     </footer>
 
-    <script>document.addEventListener("contextmenu", function (e) {
-            e.preventDefault();
-        });
-    </script>
+   <script>
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-    <script>document.addEventListener("keydown", function (e) {
-            if (e.key === 'F12' || (e.ctrlKey && (e.key === 'I' || e.key === 'U'))) {
-                e.preventDefault();
-            }
-        });
-    </script>
+    const form = this;
+    const formData = new FormData(form);
+    const jsonData = {
+        access_key: '06beb580-5c7e-4eaa-b083-6e7534924d33' 
+    };
+
+    formData.forEach((value, key) => {
+        jsonData[key] = value;
+    });
+
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(jsonData)
+    })
+    .then(async (response) => {
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+            alert("We will connect soon!");
+            form.reset();
+        } else {
+            console.error("Submission error:", data);
+            alert("Submission failed: " + (data.message || "Unknown error"));
+        }
+    })
+    .catch((error) => {
+        console.error("Network error:", error);
+        alert("A network error occurred. Please check your connection and try again.");
+    });
+});
+
+</script>
 
 </body>
 
